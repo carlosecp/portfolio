@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "Lora";
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url(/fonts/lora-700.woff2) format("woff2");
+	}
+
+	:is(h1, h2, h3, h4, h5, h6) {
+		@apply font-lora text-gray-900;
+	}
+
+	a {
+		@apply hover:text-gray-800 transition-colors;
+	}
+}
+
+@layer components {
+	.project-card {
+		@apply p-4 space-y-2;
+		@apply border border-gray-200 rounded;
+	}
+}

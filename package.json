@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-		"styles": "yarn tailwindcss -i ./src/index.css -o ./public/index.css --watch",
+		"styles": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --watch",
     "build": "vite build",
     "preview": "vite preview"
   },

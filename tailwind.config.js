@@ -1,7 +1,11 @@
 module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+	content: ["./index.html"],
+	theme: {
+		extend: {
+			fontFamily: {
+				lora: "'Lora', serif"
+			}
+		}
+	},
+	plugins: []
+};
