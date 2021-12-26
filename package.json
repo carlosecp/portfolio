@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-		"styles": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --watch",
+		"dev:styles": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --watch",
     "build": "vite build",
+		"build:styles": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --minify",
     "preview": "vite preview"
   },
   "devDependencies": {
