@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+	html, body {
+		@apply h-full;
+	}
+
 	@font-face {
 		font-family: "Lora";
 		font-style: normal;
@@ -12,7 +16,7 @@
 	}
 
 	:is(h1, h2, h3, h4, h5, h6) {
-		@apply font-lora text-gray-900;
+		@apply font-lora text-gray-900 tracking-tight;
 	}
 
 	a {
@@ -20,9 +24,3 @@
 	}
 }
 
-@layer components {
-	.project-card {
-		@apply p-4 space-y-2;
-		@apply border border-gray-200 rounded;
-	}
-}
