@@ -2,8 +2,11 @@
   "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
-    "dev:styles": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --watch",
-    "build:styles": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --minify"
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+    "tailwind-dev": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --watch",
+    "tailwind-build": "yarn tailwindcss -i ./css/tailwind.css -o ./css/index.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
