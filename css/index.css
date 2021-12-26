@@ -436,7 +436,7 @@ html, body {
 
   font-display: swap;
 
-  src: url(/fonts/lora-700.woff2) format("woff2");
+  src: url("../public/fonts/lora-700.woff2") format("woff2");
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -506,20 +506,8 @@ a:hover {
   position: relative;
 }
 
-.top-px {
-  top: 1px;
-}
-
 .bottom-px {
   bottom: 1px;
-}
-
-.bottom-0\.5 {
-  bottom: 0.125rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .mx-auto {
