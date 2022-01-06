@@ -15,12 +15,12 @@
 		src: url("/fonts/lora-700.woff2") format("woff2");
 	}
 
-	:is(h1, h2, h3, h4, h5, h6) {
-		@apply font-lora text-gray-900 tracking-tight;
-	}
-
-	a {
-		@apply hover:text-gray-800 transition-colors;
+	@font-face {
+		font-family: "Playfair";
+		font-style: italic;
+		font-weight: 500;
+		font-display: swap;
+		src: url("/fonts/playfair-i500.ttf") format("truetype");
 	}
 }
 
