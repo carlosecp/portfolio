@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'JetBrainsMono';
+		font-style: normal;
+		font-display: swap;
+		src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+		font-weight: bold;
+	}
+
+	@font-face {
+		font-family: 'JetBrainsMono';
+		font-style: normal;
+		font-display: swap;
+		src: url('/fonts/JetBrainsMono-Medium.woff2') format('woff2');
+		font-weight: medium;
+	}
+
+	@font-face {
+		font-family: 'JetBrainsMono';
+		font-style: normal;
+		font-display: swap;
+		src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+	}
+
+	@font-face {
+		font-family: 'JetBrainsMono';
+		font-style: normal;
+		font-display: swap;
+		src: url('/fonts/JetBrainsMono-SemiBold.woff2') format('woff2');
+		font-weight: semibold;
+	}
+
+	section {
+		@apply space-y-4;
+	}
+
+	:is(h1, h2, h3, h4, h5, h6) {
+		@apply font-bold;
+	}
+
+	p {
+		@apply text-gray-600;
+	}
+}
+
+@layer components {
+	.project {
+		@apply rounded border border-gray-200 p-4 transition-colors hover:border-gray-500;
+	}
+}
