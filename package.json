@@ -1,13 +1,20 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "yarn tailwindcss -i ./src/tailwind.css -o ./public/assets/index.css --watch",
-    "build": "yarn tailwindcss -i ./src/tailwind.css -o ./public/assets/index.css --minify"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.7"
-  }
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.0",
+    "svelte": "^3.44.0"
+  },
+  "type": "module"
 }
